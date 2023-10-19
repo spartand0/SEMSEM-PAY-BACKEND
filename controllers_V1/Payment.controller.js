@@ -192,6 +192,8 @@ exports.updateTransaction = async (req, res) => {
     await transaction.save();
     return;
   } catch (err) {
+    console.log(err)
+
     res.status(500).json({
       message: "An error occurred while getting order info",
       code: 500,
