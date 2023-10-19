@@ -8,7 +8,7 @@ const Transaction = new Schema({
   returnUrl: { type: String, default: "" },
   createdAt: { type: Date, default: Date.now() },
   companyId: { type: String, default: "", required: true },
-  Details: {},
+  Details: { type: {}, default: {} },
 });
 
 const TransactionModel = mongoose.model("Transaction", Transaction);
