@@ -18,6 +18,7 @@ exports.createSession = async (req, res) => {
         apiOperation: "INITIATE_CHECKOUT",
         interaction: {
           operation: "PURCHASE",
+          returnUrl: returnUrl,
           merchant: {
             name: "SEMSEM PAY",
             url: "https://www.semsemapp.com",
